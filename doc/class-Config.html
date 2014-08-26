@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="generator" content="ApiGen 2.8.0" />
+
+	<title>Class Config | </title>
+
+	<script type="text/javascript" src="resources/combined.js?1889508232"></script>
+	<script type="text/javascript" src="elementlist.js?1627563041"></script>
+	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?3505392360" />
+
+</head>
+
+<body>
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+
+		<div id="groups">
+			<h3>Namespaces</h3>
+			<ul>
+				<li class="active"><a href="namespace-None.html">None</a>
+						</li>
+				<li><a href="namespace-PHP.html">PHP</a>
+						</li>
+			</ul>
+		</div>
+
+		<hr />
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li class="active"><a href="class-Config.html">Config</a></li>
+				<li><a href="class-ConfigExample.html">ConfigExample</a></li>
+			</ul>
+
+
+
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="" />
+		<input type="hidden" name="ie" value="UTF-8" />
+		<input type="text" name="q" class="text" />
+		<input type="submit" value="Search" />
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li>
+				<a href="namespace-None.html" title="Summary of None"><span>Namespace</span></a>
+			</li>
+			<li class="active">
+<span>Class</span>			</li>
+		</ul>
+		<ul>
+			<li>
+				<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
+			</li>
+			<li>
+				<a href="deprecated.html" title="List of deprecated elements"><span>Deprecated</span></a>
+			</li>
+			<li>
+				<a href="todo.html" title="Todo list"><span>Todo</span></a>
+			</li>
+		</ul>
+		<ul>
+			<li>
+				<a href=".zip" title="Download documentation as ZIP archive"><span>Download</span></a>
+			</li>
+		</ul>
+	</div>
+
+<div id="content" class="class">
+	<h1>Class Config</h1>
+
+
+	<div class="description">
+	
+<p>Cria um objeto para armazenar e manipular configurações em arquivos
+INI.</p>
+
+	</div>
+
+
+
+	<div>
+		<h4>Direct known subclasses</h4>
+			<a href="class-ConfigExample.html">ConfigExample</a>
+	</div>
+
+
+
+
+
+
+	<div class="info">
+		
+		
+		
+		
+
+				<b>Todo:</b>
+				Métodos para adicionar e excluir configurações.<br />
+				<b>Todo:</b>
+				Possibilitar instância sem necessidade de carregar configurações de arquivo
+INI.<br />
+		<b>Located at</b> <a href="source-class-Config.html#20-230" title="Go to source code">config.class.php</a><br />
+	</div>
+
+
+
+	<table class="summary" id="methods">
+	<caption>Methods summary</caption>
+	<tr data-order="__construct" id="___construct">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#___construct">#</a>
+		<code><a href="source-class-Config.html#39-60" title="Go to source code">__construct</a>( <span>string <var>$filename</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Construtor da classe. Recebe como parâmetro obrigatório o nome do arquivo
+INI com as configurações. $filename será interpretado com <a href="http://php.net/manual/en/function.realpath.php">realpath()</a> e armazenado em <code><a href="class-Config.html#$source">Config::<var>$source</var></a></code>.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Construtor da classe. Recebe como parâmetro obrigatório o nome do arquivo
+INI com as configurações. $filename será interpretado com <a href="http://php.net/manual/en/function.realpath.php">realpath()</a> e armazenado em <code><a href="class-Config.html#$source">Config::<var>$source</var></a></code>.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$filename</var></dt>
+					<dd><code>string</code><br>$filename Um nome/caminho de arquivo INI com configurações.</dd>
+				</dl></div>
+
+
+				<h4>Throws</h4>
+				<div class="list">
+					<code><code><a href="class-Exception.html">Exception</a></code></code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="buildConfArray" id="_buildConfArray">
+
+		<td class="attributes"><code>
+			 protected 
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_buildConfArray">#</a>
+		<code><a href="source-class-Config.html#62-86" title="Go to source code">buildConfArray</a>( <span>array <var>$config</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Constrói o array com as configurações que será armazenado em <code><a href="class-Config.html#$config">Config::<var>$config</var></a></code>.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Constrói o array com as configurações que será armazenado em <code><a href="class-Config.html#$config">Config::<var>$config</var></a></code>.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$config</var></dt>
+					<dd><code>array</code><br>$config O array retornado por <a href="http://php.net/manual/en/function.parse-ini-file.php">parse_ini_file()</a>.</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>boolean</code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="__toString" id="___toString">
+
+		<td class="attributes"><code>
+			 public 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#___toString">#</a>
+		<code><a href="source-class-Config.html#88-120" title="Go to source code">__toString</a>( )</code>
+
+		<div class="description short">
+			
+<p>Converte o conteúdo de <code><a href="class-Config.html#$config">Config::<var>$config</var></a></code> para uma string. Essa string
+não pode ser usada para criar um novo arquivo INI.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Converte o conteúdo de <code><a href="class-Config.html#$config">Config::<var>$config</var></a></code> para uma string. Essa string
+não pode ser usada para criar um novo arquivo INI.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br>Retorna uma string com o conteúdo de <code><a href="class-Config.html#$config">Config::<var>$config</var></a></code>.<br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="show" id="_show">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_show">#</a>
+		<code><a href="source-class-Config.html#122-127" title="Go to source code">show</a>( )</code>
+
+		<div class="description short">
+			
+<p>Exibe a string gerada por <code><a href="class-Config.html#___toString">Config::__toString()</a></code></p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Exibe a string gerada por <code><a href="class-Config.html#___toString">Config::__toString()</a></code></p>
+
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="__get" id="___get">
+
+		<td class="attributes"><code>
+			 public 
+			mixed
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#___get">#</a>
+		<code><a href="source-class-Config.html#129-142" title="Go to source code">__get</a>( <span>string <var>$name</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Método mágico usado para retornar as configurações. Para saber mais sobre
+métodos mágicos no PHP acesse <a href="http://php.net/manual/pt_BR/language.oop5.magic.php">o manual do PHP</a>.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Método mágico usado para retornar as configurações. Para saber mais sobre
+métodos mágicos no PHP acesse <a href="http://php.net/manual/pt_BR/language.oop5.magic.php">o manual do PHP</a>.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$name</var></dt>
+					<dd><code>string</code><br>$name O nome da configuração desejada.</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>mixed</code><br>Retorna o valor da configuração desejada.<br />
+				</div>
+
+				<h4>Throws</h4>
+				<div class="list">
+					<code><code><a href="class-Exception.html">Exception</a></code></code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="__set" id="___set">
+
+		<td class="attributes"><code>
+			 public 
+			mixed
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#___set">#</a>
+		<code><a href="source-class-Config.html#144-173" title="Go to source code">__set</a>( <span>string <var>$name</var></span>, <span>mixed <var>$value</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Método mágico usado para definir valores nas configurações. Para saber
+mais sobre métodos mágicos no PHP acesse <a href="http://php.net/manual/pt_BR/language.oop5.magic.php">o manual do PHP</a>.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Método mágico usado para definir valores nas configurações. Para saber
+mais sobre métodos mágicos no PHP acesse <a href="http://php.net/manual/pt_BR/language.oop5.magic.php">o manual do PHP</a>.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$name</var></dt>
+					<dd><code>string</code><br>$name A configuração desejada.</dd>
+					<dt><var>$value</var></dt>
+					<dd><code>mixed</code><br>$value O valor da configuração.</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>mixed</code><br>Retorna o valor configurado em caso de sucesso ou FALSE em caso de erro.<br />
+				</div>
+
+				<h4>Throws</h4>
+				<div class="list">
+					<code><code><a href="class-Exception.html">Exception</a></code></code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="save" id="_save">
+
+		<td class="attributes"><code>
+			 public 
+			integer
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_save">#</a>
+		<code><a href="source-class-Config.html#175-195" title="Go to source code">save</a>( <span>string <var>$filename</var> = <span class="php-keyword1">NULL</span></span> )</code>
+
+		<div class="description short">
+			
+<p>Salva o conteúdo de <code><a href="class-Config.html">Config</a></code> em um arquivo INI.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Salva o conteúdo de <code><a href="class-Config.html">Config</a></code> em um arquivo INI.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$filename</var></dt>
+					<dd><code>string</code><br>$filename Opcional. O nome/caminho do arquivo de configuração. Se omitido, o
+armazenado em <code><a href="class-Config.html#$source">Config::<var>$source</var></a></code> será utilizado.</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>integer</code><br>Retorna o número de bytes escritos em caso de sucesso.<br />
+				</div>
+
+				<h4>Throws</h4>
+				<div class="list">
+					<code><code><a href="class-Exception.html">Exception</a></code></code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getSource" id="_getSource">
+
+		<td class="attributes"><code>
+			 public 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getSource">#</a>
+		<code><a href="source-class-Config.html#197-203" title="Go to source code">getSource</a>( )</code>
+
+		<div class="description short">
+			
+<p>Método para retornar o arquivo INI fonte das configurações, armazenado em
+<code><a href="class-Config.html#$source">Config::<var>$source</var></a></code>.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Método para retornar o arquivo INI fonte das configurações, armazenado em
+<code><a href="class-Config.html#$source">Config::<var>$source</var></a></code>.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br>Retorna o arquivo INI de onde as configurações foram lidas.<br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="prepareToSave" id="_prepareToSave">
+
+		<td class="attributes"><code>
+			 protected 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_prepareToSave">#</a>
+		<code><a href="source-class-Config.html#205-228" title="Go to source code">prepareToSave</a>( )</code>
+
+		<div class="description short">
+			
+<p>Cria uma string com o conteúdo de <code><a href="class-Config.html#$config">Config::<var>$config</var></a></code> que possa ser
+gravada num arquivo INI.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Cria uma string com o conteúdo de <code><a href="class-Config.html#$config">Config::<var>$config</var></a></code> que possa ser
+gravada num arquivo INI.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br>Retorna uma string para ser gravada em arquivos INI.<br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+
+
+
+
+
+
+	<table class="summary" id="properties">
+	<caption>Properties summary</caption>
+	<tr data-order="config" id="$config">
+		<td class="attributes"><code>
+			protected  
+			array
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Config.html#27-31" title="Go to source code"><var>$config</var></a>
+		</td>
+		<td class="value"><code><span class="php-keyword1">array</span>()</code></td>
+		<td class="description"><div>
+			<a href="#$config" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>Armazena a configuração</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Armazena a configuração</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="source" id="$source">
+		<td class="attributes"><code>
+			protected  
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Config.html#33-37" title="Go to source code"><var>$source</var></a>
+		</td>
+		<td class="value"><code><span class="php-keyword1">NULL</span></code></td>
+		<td class="description"><div>
+			<a href="#$source" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>O caminho para o arquivo INI.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>O caminho para o arquivo INI.</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+</div>
+
+	<div id="footer">
+		 API documentation generated by <a href="http://apigen.org">ApiGen 2.8.0</a>
+	</div>
+</div>
+</div>
+</body>
+</html>
